@@ -1,41 +1,48 @@
-githubÊÇÒ»¸ö»ùÓÚgitµÄ´úÂëÍĞ¹ÜÆ½Ì¨
+githubæ˜¯ä¸€ä¸ªåŸºäºgitçš„ä»£ç æ‰˜ç®¡å¹³å°
 
-1.ÅäÖÃGit
-Ê×ÏÈÔÚ±¾µØ´´½¨ssh key£»
+1.é…ç½®Git
+é¦–å…ˆåœ¨æœ¬åœ°åˆ›å»ºssh keyï¼›
 ssh-keygen -t rsa -C "your_email@youremail.com"
 
-ºóÃæµÄyour_email@youremail.com¸ÄÎªÄãÔÚgithubÉÏ×¢²áµÄÓÊÏä£¬Ö®ºó»áÒªÇóÈ·ÈÏÂ·¾¶ºÍÊäÈëÃÜÂë£¬ÎÒÃÇÕâÊ¹ÓÃÄ¬ÈÏµÄÒ»Â·»Ø³µ¾ÍĞĞ¡£³É¹¦µÄ»°»áÔÚ~/ÏÂÉú³É.sshÎÄ¼ş¼Ğ£¬½øÈ¥£¬´ò¿ªid_rsa.pub£¬¸´ÖÆÀïÃæµÄkey¡£
-»Øµ½githubÉÏ£¬½øÈë Account Settings£¨ÕË»§ÅäÖÃ£©£¬×ó±ßÑ¡ÔñSSH Keys£¬Add SSH Key,titleËæ±ãÌî£¬Õ³ÌùÔÚÄãµçÄÔÉÏÉú³ÉµÄkey¡£
+åé¢çš„your_email@youremail.comæ”¹ä¸ºä½ åœ¨githubä¸Šæ³¨å†Œçš„é‚®ç®±ï¼Œä¹‹åä¼šè¦æ±‚ç¡®è®¤è·¯å¾„å’Œè¾“å…¥å¯†ç ï¼Œæˆ‘ä»¬è¿™ä½¿ç”¨é»˜è®¤çš„ä¸€è·¯å›è½¦å°±è¡Œã€‚æˆåŠŸçš„è¯ä¼šåœ¨~/ä¸‹ç”Ÿæˆ.sshæ–‡ä»¶å¤¹ï¼Œè¿›å»ï¼Œæ‰“å¼€id_rsa.pubï¼Œå¤åˆ¶é‡Œé¢çš„keyã€‚
+å›åˆ°githubä¸Šï¼Œè¿›å…¥ Account Settingsï¼ˆè´¦æˆ·é…ç½®ï¼‰ï¼Œå·¦è¾¹é€‰æ‹©SSH Keysï¼ŒAdd SSH Key,titleéšä¾¿å¡«ï¼Œç²˜è´´åœ¨ä½ ç”µè„‘ä¸Šç”Ÿæˆçš„keyã€‚
 
 
-ÎªÁËÑéÖ¤ÊÇ·ñ³É¹¦£¬ÔÚgit bashÏÂÊäÈë£º
+ä¸ºäº†éªŒè¯æ˜¯å¦æˆåŠŸï¼Œåœ¨git bashä¸‹è¾“å…¥ï¼š
 ssh -T git@github.com
 
-½ÓÏÂÀ´ÎÒÃÇÒª×öµÄ¾ÍÊÇ°Ñ±¾µØ²Ö¿â´«µ½githubÉÏÈ¥£¬ÔÚ´ËÖ®Ç°»¹ĞèÒªÉèÖÃusernameºÍemail£¬ÒòÎªgithubÃ¿´Îcommit¶¼»á¼ÇÂ¼ËûÃÇ¡£
+æ¥ä¸‹æ¥æˆ‘ä»¬è¦åšçš„å°±æ˜¯æŠŠæœ¬åœ°ä»“åº“ä¼ åˆ°githubä¸Šå»ï¼Œåœ¨æ­¤ä¹‹å‰è¿˜éœ€è¦è®¾ç½®usernameå’Œemailï¼Œå› ä¸ºgithubæ¯æ¬¡commitéƒ½ä¼šè®°å½•ä»–ä»¬ã€‚
 $ git config --global user.name "your name"
 $ git config --global user.email "your_email@youremail.com"
-½øÈëÒªÉÏ´«µÄ²Ö¿â£¬ÓÒ¼ügit bash£¬Ìí¼ÓÔ¶³ÌµØÖ·£º
+
+è¿œç¨‹åº“ä¸æœ¬åœ°åº“ä¹‹é—´çš„æ“ä½œï¼š
+yourNameå’ŒyourRepoè¡¨ç¤ºä½ å†githubçš„ç”¨æˆ·åå’Œåˆšæ‰æ–°å»ºçš„ä»“åº“
+æœ¬åœ°åº“å…³è”è¿œç¨‹åº“ï¼Œåœ¨æœ¬åœ°ä»“åº“ç›®å½•è¿è¡Œå‘½ä»¤ï¼š
 $ git remote add origin git@github.com:yourName/yourRepo.git
 
-2.¹¤×÷Á÷
-²é¿´×´Ì¬£º
+ä»è¿œç¨‹å…‹éš†ä¸€ä»½åˆ°æœ¬åœ°å¯ä»¥é€šè¿‡git clone
+Gitæ”¯æŒHTTPSå’ŒSSHåè®®ï¼ŒSSHé€Ÿåº¦æ›´å¿«
+$ git clone git@github.com:yourName/yourRepo.git
+
+2.å·¥ä½œæµ
+æŸ¥çœ‹çŠ¶æ€ï¼š
 $ git status
 
-Ìá½»¡¢ÉÏ´«£º
-½ÓÏÂÀ´ÔÚ±¾µØ²Ö¿âÀïÌí¼ÓÒ»Ğ©ÎÄ¼ş£¬±ÈÈçREADME£¬
+æäº¤ã€ä¸Šä¼ ï¼š
+æ¥ä¸‹æ¥åœ¨æœ¬åœ°ä»“åº“é‡Œæ·»åŠ ä¸€äº›æ–‡ä»¶ï¼Œæ¯”å¦‚READMEï¼Œ
 
 $ git add README
 $ git commit -m "first commit"
 
-É¾³ı
+åˆ é™¤
 $ git rm README
 $ git commit -m "first commit"
 
-ÉÏ´«µ½github£º
+ä¸Šä¼ åˆ°githubï¼š
 $ git push origin master
 
-git pushÃüÁî»á½«±¾µØ²Ö¿âÍÆËÍµ½Ô¶³Ì·şÎñÆ÷¡£
-git pullÃüÁîÔòÏà·´¡£
+git pushå‘½ä»¤ä¼šå°†æœ¬åœ°ä»“åº“æ¨é€åˆ°è¿œç¨‹æœåŠ¡å™¨ã€‚
+git pullå‘½ä»¤åˆ™ç›¸åã€‚
 
 
 
