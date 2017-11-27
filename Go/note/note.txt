@@ -1,0 +1,9 @@
+win7如何查看某个端口被谁占用：
+
+netstat -ano
+
+netstat -ano | findstr "进程号"
+
+tasklist|findstr "PID"
+
+taskkill /f /t /im 任务
