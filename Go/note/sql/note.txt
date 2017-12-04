@@ -1,0 +1,4 @@
+下载安装 go-sql-driver ：
+
+打开gitbash,输入
+go get github.com/go-sql-driver/mysql
